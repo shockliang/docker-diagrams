@@ -31,36 +31,9 @@ $ make clobber  # Removes artifacts and generated images
 ```
 
 Update the diagrams version:
-* Run the container using python 3.11.1-alpine and mount the volume to mapping the source folder
-```sh
-docker run -it --rm -v ${PWD}:/home python:3.11.1-alpine ash
-```
-* install package in the packages
-```sh
-apk add --update --no-cache \
-    curl\
-    graphviz\
-    gcc\
-    libc-dev\
-    libffi-dev\
-    ttf-freefont \
-    coreutils && \
-    curl -sSL https://raw.githubusercontent.com/python-poetry/install.python-poetry.org/42a10434ed127a5986c3a9952c75d333ac3a1f8e/install-poetry.py > install-poetry.py && \
-    echo "08a38ab8de719d4012af4d62c37ce09e84edce6e1c4da7c5ccbcade359312c8b install-poetry.py" | sha256sum -c && \
-    python install-poetry.py --version 1.3.1 && \
-    apk del \
-    gcc \
-    libc-dev \
-    libffi-dev
-```
-* Run `export PATH="/root/.local/bin:$PATH"` after install package of `poetry`.
 * Upgrading the  diagrams version of `pyproject.toml`
-* Run `poetry install --no-root` for update poetry.lock
-* Exit the container and the `poetry.lock` will be updated.
-* Run `make test` to testing.
-* Commit the `poetry.lock` and `pyproject.toml` and push.
+* Commit the `pyproject.toml` and push.
 * Wait the github action to run pipeline. :tada:
-
 
 Thanks @gtramontina
 
