@@ -1,7 +1,8 @@
 <p align="center">
   <a href="https://hub.docker.com/r/shockwater/diagrams/tags/"><img height="20" alt="Docker Tags" src="https://img.shields.io/badge/dynamic/json.svg?style=for-the-badge&label=%F0%9F%90%B3%20tags&colorB=066da5&query=$.count&uri=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fshockwater%2Fdiagrams%2Ftags"></a>
   <a href="https://hub.docker.com/r/shockwater/diagrams/tags/"><img height="20" alt="Docker Latest Tag" src="https://img.shields.io/badge/dynamic/json.svg?style=for-the-badge&label=%F0%9F%90%B3%20latest%20tag&colorB=066da5&query=$.results[0].name&uri=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fshockwater%2Fdiagrams%2Ftags"></a>
-  <a href="https://github.com/shockwater/docker-diagrams/actions"><img height="20" alt="Build" src="https://img.shields.io/github/workflow/status/shockwater/docker-diagrams/Build docker image/master?style=for-the-badge"></a>
+  <a href="https://github.com/shockliang/docker-diagrams/actions"><img height="20" alt="Build" src="https://img.shields.io/github/actions/workflow/status/shockliang/docker-diagrams/build.yml"></a>
+  ![Build Docker Image](https://github.com/shockliang/docker-diagrams/actions/workflows/build.yml/badge.svg)
 </p>
 
 <p align="center">
